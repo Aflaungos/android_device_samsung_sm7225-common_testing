@@ -1,0 +1,225 @@
+{
+  "Attributes": [
+    {
+      "Name": "GpisSfCpuset",
+      "Controller": "cpuset",
+      "File": "cpus"
+    },
+    {
+      "Name": "ForegroundBoostCapacityCPUs",
+      "Controller": "cpuset",
+      "File": "foreground-boost/cpus"
+    },
+    {
+      "Name": "STuneBoost",
+      "Controller": "schedtune",
+      "File": "schedtune.boost"
+    },
+    {
+      "Name": "STunePreferIdle",
+      "Controller": "schedtune",
+      "File": "schedtune.prefer_idle"
+    }
+  ],
+
+  "Profiles": [
+        {
+      "Name": "GpisSfCpusetJoin",
+      "Actions" : [
+        {
+          "Name" : "JoinCgroup",
+          "Params" :
+          {
+            "Controller": "cpuset",
+            "Path": "sf"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "GpisSfCpusetEnable",
+      "Actions": [
+        {
+          "Name": "SetAttribute",
+          "Params":
+          {
+            "Name": "GpisSfCpuset",
+            "Value": "6-7"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "GpisSfCpusetDisable",
+      "Actions": [
+        {
+          "Name": "SetAttribute",
+          "Params":
+          {
+            "Name": "GpisSfCpuset",
+            "Value": "0-7"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SystemServicePerformance",
+      "Actions" : [
+        {
+          "Name" : "JoinCgroup",
+          "Params" :
+          {
+            "Controller": "schedtune",
+            "Path": "foreground-boost"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SystemServiceCapacityHigh",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpuset",
+            "Path": "foreground-boost"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "HighEnergySaving",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "NormalPerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": "HighPerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "foreground"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "MaxPerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "top-app"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "RealtimePerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "rt"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CameraServicePerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "camera-daemon"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "NNApiHALPerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "schedtune",
+            "Path": "nnapi-hal"
+          }
+        }
+      ]
+    },
+
+    {
+      "Name": "CpuPolicySpread",
+      "Actions": [
+        {
+          "Name": "SetAttribute",
+          "Params":
+          {
+            "Name": "STunePreferIdle",
+            "Value": "1"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "CpuPolicyPack",
+      "Actions": [
+        {
+          "Name": "SetAttribute",
+          "Params":
+          {
+            "Name": "STunePreferIdle",
+            "Value": "0"
+          }
+        }
+      ]
+    }
+  ],
+
+  "AggregateProfiles": [
+    {
+      "Name": "GPIS_HINT_ENABLE",
+      "Profiles": [ "GpisSfCpusetEnable" ]
+    },
+    {
+      "Name": "GPIS_HINT_DISABLE",
+      "Profiles": [ "GpisSfCpusetDisable" ]
+    },
+    {
+      "Name": "CPUSET_SP_FOREGROUND_BOOST",
+      "Profiles": [ "SystemServicePerformance", "SystemServiceCapacityHigh", "HighIoPriority", "TimerSlackNormal" ]
+    }
+  ]
+}
