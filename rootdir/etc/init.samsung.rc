@@ -35,6 +35,9 @@ on early-init
     mkdir /mnt/vendor/efs 0771 radio system
     mkdir /mnt/vendor/persist 0771 root system
 
+on post-fs-data
+    mkdir /data/vendor/gatekeeper 0770 system system
+
 on init
     symlink /dev/block/bootdevice/by-name/steady  /dev/block/steady
     symlink /dev/block/bootdevice/by-name/persistent  /dev/block/persistent
