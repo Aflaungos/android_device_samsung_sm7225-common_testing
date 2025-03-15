@@ -44,8 +44,7 @@ limitations under the License.
             <!-- measured [26-36] lower-upper [8-85] median * 1.5 [47] -->
         </MediaCodec>
         <MediaCodec name="OMX.qcom.video.encoder.hevc.cq" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="332-731" />
-            <!-- measured [537-658] lower-upper [151-1608] median * 1.5 [896] -->
+             <Limit name="measured-frame-rate-320x240" range="226-226" />
         </MediaCodec>
         <MediaCodec name="c2.android.avc.encoder" type="video/avc" update="true">
             <Limit name="measured-frame-rate-320x240" range="123-271" />
