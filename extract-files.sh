@@ -65,6 +65,13 @@ function blob_fixup() {
 	vendor/lib64/hw/gatekeeper.mdfpp.so|vendor/lib64/libskeymaster4device.so)
             "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v33.so" "${2}"
             ;;
+        vendor/lib/unihal_main@2.15.so|vendor/lib64/unihal_main@2.15.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
+            ;;
+	*)
+            return 1
+            ;;
     esac
 }
 
