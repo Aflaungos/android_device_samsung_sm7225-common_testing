@@ -21,8 +21,6 @@
 
 #include <cutils/properties.h>
 #include <string.h>
-#include <chrono>
-#include <thread>
 
 #if MAJOR_VERSION >= 4
 #include <cmath>
@@ -214,8 +212,7 @@ Return<Result> PrimaryDevice::setVoiceVolume(float volume) {
 
 Return<Result> PrimaryDevice::setMode(AudioMode mode) {
     /* On stock ROM Samsung sets the g_call_state and g_call_sim_slot audio parameters
-     * in the framework, breaking it on AOSP ROMs. For the audio params call_state and
-     * g_call_state 2 corresponds to CALL_ACTIVE and 1 to CALL_INACTIVE respectively.
+     * in the framework, breaking it on AOSP ROMs.
      * For the g_call_sim_slot parameter 0x01 describes SIM1 and 0x02 SIM2.
      */
 
@@ -223,27 +220,23 @@ Return<Result> PrimaryDevice::setMode(AudioMode mode) {
 
     // These props return either 0 (not calling),
     // or 1 (SIM is calling)
-    property_get("vendor.calls.ongoing0", simSlot1, "");
-    property_get("vendor.calls.ongoing1", simSlot2, "");
+    property_get("vendor.calls.slot_id0", simSlot1, "");
+    property_get("vendor.calls.slot_id1", simSlot2, "");
 
     // Wait until one sim slot reports a call
     if (mode == AudioMode::IN_CALL) {
         while (strcmp(simSlot1, "0") == 0 && strcmp(simSlot2, "0") == 0) {
-            std::this_thread::sleep_for(std::chrono::milliseconds(50));
-            property_get("vendor.calls.ongoing0", simSlot1, "");
-            property_get("vendor.calls.ongoing1", simSlot2, "");
+            property_get("vendor.calls.slot_id0", simSlot1, "");
+            property_get("vendor.calls.slot_id1", simSlot2, "");
         }
     }
 
     if (strcmp(simSlot1, "1") == 0) {
         // SIM1
-        mDevice->halSetParameters("call_state=2;g_call_state=2;g_call_sim_slot=0x01");
+        mDevice->halSetParameters("g_call_sim_slot=0x01");
     } else if (strcmp(simSlot2, "1") == 0) {
         // SIM2
-        mDevice->halSetParameters("call_state=2;g_call_state=2;g_call_sim_slot=0x02");
-    } else if (strcmp(simSlot1, "0") == 0 && strcmp(simSlot2, "0") == 0) {
-        // No call
-        mDevice->halSetParameters("call_state=1;g_call_state=1");
+        mDevice->halSetParameters("g_call_sim_slot=0x02");
     }
 
     // INVALID, CURRENT, CNT, MAX are reserved for internal use.

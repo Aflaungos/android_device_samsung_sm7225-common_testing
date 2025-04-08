@@ -105,7 +105,7 @@ Return<void> DevicesFactory::openDevice(const char* moduleName, Callback _hidl_c
     int halStatus = loadAudioInterface(moduleName, &halDevice);
     if (halStatus == OK) {
         result = new DeviceShim(halDevice);
-	android::hardware::setMinSchedulerPolicy(result, SCHED_NORMAL, ANDROID_PRIORITY_AUDIO);
+        android::hardware::setMinSchedulerPolicy(result, SCHED_NORMAL, ANDROID_PRIORITY_AUDIO);
         retval = Result::OK;
     } else if (halStatus == -EINVAL) {
         retval = Result::NOT_INITIALIZED;
