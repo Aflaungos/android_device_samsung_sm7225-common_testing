@@ -384,8 +384,8 @@
     <ctl name="TX_DEC3 Volume" value="81" />
     <ctl name="TX_DEC4 Volume" value="84" />
     <ctl name="TX_DEC5 Volume" value="84" />
-    <ctl name="TX_DEC6 Volume" value="84" />
-    <ctl name="TX_DEC7 Volume" value="84" />
+    <ctl name="TX_DEC6 Volume" value="92" />
+    <ctl name="TX_DEC7 Volume" value="92" />
 
     <ctl name="ADC1 Volume" value="12" />
     <ctl name="ADC2 Volume" value="12" />
