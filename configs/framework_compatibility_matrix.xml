@@ -1085,6 +1085,15 @@
             <instance>epdgd2</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.network</name>
+        <version>1</version>
+        <interface>
+            <name>ISehRadioNetwork</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.samsung.hardware.snap</name>
         <transport>hwbinder</transport>
