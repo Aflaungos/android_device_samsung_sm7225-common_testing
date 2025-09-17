@@ -213,6 +213,7 @@
             <name>IRadioConfig</name>
             <instance>default</instance>
         </interface>
+	<fqname>@1.1::IRadioConfig/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio.deprecated</name>
