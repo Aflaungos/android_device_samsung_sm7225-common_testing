@@ -362,6 +362,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
+    vendor.samsung.hardware.radio@2.0.vendor \
+    vendor.samsung.hardware.radio@2.1.vendor \
+    vendor.samsung.hardware.radio@2.2.vendor \
     libxml2 \
     librilutils \
     librmnetctl \
