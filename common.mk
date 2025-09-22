@@ -336,7 +336,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
-# QCOM
+# QMI
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 PRODUCT_PACKAGES += \
     libjson \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
@@ -362,17 +364,11 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    vendor.samsung.hardware.radio@2.0.vendor \
-    vendor.samsung.hardware.radio@2.1.vendor \
-    vendor.samsung.hardware.radio@2.2.vendor \
-    libxml2 \
-    librilutils \
-    librmnetctl \
     secril_config_svc \
-    libjsoncpp.vendor
+    sehradiomanager
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
 
 # Sensors
 PRODUCT_PACKAGES += \

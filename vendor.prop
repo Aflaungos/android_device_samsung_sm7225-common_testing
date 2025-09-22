@@ -216,7 +216,11 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Power HAL
 vendor.powerhal.disp.idle_support=false
 
+# QC Value Addons
+ro.vendor.qti.va_aosp.support=1
+
 # RIL
+keyguard.no_require_sim=true
 vendor.sec.rild.libpath=/vendor/lib64/libsec-ril.so
 ro.vendor.sec.radio.def_network=9
 persist.vendor.radio.enableadvancedscan=true

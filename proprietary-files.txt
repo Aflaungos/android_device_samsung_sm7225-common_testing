@@ -1034,6 +1034,10 @@ vendor/etc/public.libraries.txt
 vendor/etc/init/init.qti.qcv.sh
 
 # QMI
+system/etc/permissions/privapp-permissions-qti.xml
+system/etc/sysconfig/qti_whitelist.xml
+vendor/etc/init/qmipriod.debug.rc
+vendor/etc/init/qmipriod.rc
 vendor/bin/pd-mapper
 vendor/bin/ssr_diag
 vendor/bin/ssr_setup
@@ -1094,6 +1098,11 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # RIL
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.qcom.xml
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_30.xml
+vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_30.xml
+product/etc/permissions/UimService.xml
+product/framework/uimservicelibrary.jar
 vendor/bin/netmgrd
 vendor/bin/hw/rild
 vendor/bin/adpl
