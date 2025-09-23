@@ -16,13 +16,9 @@
 
 COMMON_PATH := device/samsung/sm7225-common
 
-DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
-
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
 
 # APEX
 PRODUCT_COMPRESSED_APEX := false
@@ -353,6 +349,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml
+
+# Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
+DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Perf
 PRODUCT_PACKAGES += \
