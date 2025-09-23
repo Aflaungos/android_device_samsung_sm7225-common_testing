@@ -443,6 +443,8 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
 
 # Telephony
+$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
+
 PRODUCT_PACKAGES += \
     extphonelib \
     extphonelib-product \
