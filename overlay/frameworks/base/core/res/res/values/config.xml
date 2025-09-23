@@ -37,6 +37,9 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6 V 24.8888888888889 H 25.6 V 0 H 0 Z</string>
 
+    <!-- Whether Hearing Aid profile is supported -->
+    <bool name="config_hearing_aid_profile_supported">true</bool>
+
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
     <bool name="config_showNavigationBar">true</bool>
