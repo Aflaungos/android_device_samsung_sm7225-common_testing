@@ -39,6 +39,9 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 # Bootanimation
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# QC Connectivity Engine
+BOARD_USES_QCNE := true
+
 # Platform
 PRODUCT_PLATFORM := lito
 TARGET_BOARD_PLATFORM := lito
