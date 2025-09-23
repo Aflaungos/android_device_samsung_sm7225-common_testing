@@ -217,6 +217,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.fastcharge@1.0-service.samsung
 
+# File System #TODO
+# TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
