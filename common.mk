@@ -165,7 +165,7 @@ PRODUCT_PACKAGES += \
 
 # CAS
 PRODUCT_PACKAGES += \
-    android.hardware.cas@1.2-service
+    android.hardware.cas@1.2-service-lazy
 
 # Charger
 PRODUCT_PACKAGES += \
