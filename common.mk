@@ -179,6 +179,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json
 
+# Restrict DebugFS for CTS compliance
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
