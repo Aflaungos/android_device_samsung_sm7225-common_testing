@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     fstab.default.ramdisk \
     fstab.ramplus \
     init.qcom.rc \
+    init.qcom.factory.rc \
     init.qcom.usb.rc \
     init.qti.qcv.rc \
     init.samsung.bsp.rc \
@@ -56,10 +57,14 @@ PRODUCT_PACKAGES += \
 
 # Init Files (Vendor)
 PRODUCT_PACKAGES += \
+    init.crda.sh \
     init.class_main.sh \
     init.qcom.class_core.sh \
+    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
     init.qcom.sh \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
