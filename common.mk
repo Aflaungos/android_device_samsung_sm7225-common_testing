@@ -498,9 +498,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml
-
 # Tether
 PRODUCT_PACKAGES += \
     libipanat \
