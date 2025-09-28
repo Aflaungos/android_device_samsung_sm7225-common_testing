@@ -515,6 +515,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal \
     libwifi-hal-qcom \
+    libwfdaac_vendor \
     libwpa_client \
     WifiOverlay \
     TetheringConfigOverlay \
