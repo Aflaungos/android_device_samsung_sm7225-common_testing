@@ -450,9 +450,6 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge
 
-# Storages
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
 # Touch features
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.sm7225
