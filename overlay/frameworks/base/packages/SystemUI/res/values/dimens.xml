@@ -21,12 +21,6 @@
 
     <dimen name="rounded_corner_content_padding">0dp</dimen>
 
-    <dimen name="rounded_corner_radius_top">0.0px</dimen>
-
-    <dimen name="rounded_corner_radius_bottom">32.0px</dimen>
-
-    <dimen name="rounded_corner_radius">0.0px</dimen>
-
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">16dp</dimen>
 </resources>
