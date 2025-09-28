@@ -43,6 +43,21 @@
     <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
     <bool name="config_wifi_softap_sae_supported">true</bool>
 
+    <!-- Wifi Hal supports force client disconnect for softap -->
+    <bool translatable="false" name="config_wifiSofapClientForceDisconnectSupported">false</bool>
+
+    <!-- Boolean indicating that softap passphrase need to enable ASCII encodable check -->
+    <bool translatable="false" name="config_wifiSoftapPassphraseAsciiEncodableCheck">false</bool>
+
+    <!-- boolean indicating whether or not to reset channel configuration during cloud configuration restore -->
+    <bool translatable="false" name ="config_wifiSoftapResetChannelConfig">false</bool>
+
+    <!-- boolean indicating whether or not to reset hiddenSsid configuration during cloud configuration restore -->
+    <bool translatable="false" name ="config_wifiSoftapResetHiddenConfig">false</bool>
+
+    <!-- boolean indicating whether or not to reset max client setting configuration during cloud configuration restore -->
+    <bool translatable="false" name ="config_wifiSoftapResetMaxClientSettingConfig">false</bool>
+
     <!-- Wifi driver supports batched scan -->
     <bool name="config_wifi_batched_scan_supported">true</bool>
 
