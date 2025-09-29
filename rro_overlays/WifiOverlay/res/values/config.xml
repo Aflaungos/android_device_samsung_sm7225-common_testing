@@ -58,8 +58,19 @@
     <!-- boolean indicating whether or not to reset max client setting configuration during cloud configuration restore -->
     <bool translatable="false" name ="config_wifiSoftapResetMaxClientSettingConfig">false</bool>
 
+    <!-- Integer indicating maximum hardware supported client number of soft ap -->
+    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">10</integer>
+
     <!-- Wifi driver supports batched scan -->
     <bool name="config_wifi_batched_scan_supported">true</bool>
+
+    <!-- Indicates that the framework should auto append lower bands to band configuration for
+         avoiding coexistence handling. For example: 5g only band will change to 2.4g|5g and
+         6g band will change to 2.4|5g|6g band -->
+    <bool translatable="false" name="config_wifiSoftapAutoAppendLowerBandsToBandConfigurationEnabled">false</bool>
+
+    <!-- boolean indicating whether or not to auto-upgrade band setting configuration to dual bands during cloud configuration restore when device supported -->
+    <bool translatable="false" name ="config_wifiSoftapAutoUpgradeToBridgedConfigWhenSupported">false</bool>
 
     <!-- Indicates that dynamic country code update in AP mode is supported on this device -->
     <bool translatable="false" name="config_wifiSoftApDynamicCountryCodeUpdateSupported">true</bool>
@@ -78,7 +89,4 @@
 
     <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
     <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
-
-    <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
-    <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
 </resources>
