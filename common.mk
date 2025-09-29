@@ -47,6 +47,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     wifi_qcom.rc \
     wifi_sec.rc \
+    wifi_sm7225.rc \
     init.audio.samsung.rc \
     init.nfc.samsung.rc \
     init.vendor.onebinary.rc \
