@@ -17,9 +17,15 @@
 <resources>
     <!--  Location on the screen of the center of the physical power button. This is a reasonable
     default that should be overridden by device-specific overlays.  -->
-    <dimen name="physical_power_button_center_screen_location_y">620px</dimen>
+    <dimen name="physical_power_button_center_screen_location_y">940px</dimen>
 
-    <dimen name="rounded_corner_content_padding">0dp</dimen>
+    <!-- Location on the screen of the center of the fingerprint sensor. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">940px</dimen>
+
+    <!-- Location on the screen of the center of the fingerprint sensor. -->
+    <dimen name="physical_fingerprint_sensor_center_screen_location_x">1080px</dimen>
+
+    <dimen name="rounded_corner_content_padding">14dp</dimen>
 
     <!-- Margin on the left side of the carrier text on Keyguard -->
     <dimen name="keyguard_carrier_text_margin">16dp</dimen>
