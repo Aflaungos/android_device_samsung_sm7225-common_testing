@@ -525,6 +525,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     libwifi-hal \
+    libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwfdaac_vendor \
     libwpa_client \
