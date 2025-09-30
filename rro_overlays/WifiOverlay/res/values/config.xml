@@ -61,6 +61,9 @@
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">10</integer>
 
+    <!-- Wifi driver supports IEEE80211AC for softap -->
+    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
+
     <!-- Wifi driver supports batched scan -->
     <bool name="config_wifi_batched_scan_supported">true</bool>
 
