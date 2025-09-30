@@ -86,7 +86,6 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libtinycompress \
-    libbatterylistener \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
