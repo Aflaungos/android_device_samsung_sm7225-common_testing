@@ -40,6 +40,11 @@
     <!-- Enable ACS (auto channel selection) for softap -->
     <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
 
+    <!-- List of allowed channels in 2GHz band for softap. If the device doesn't want to restrict
+         channels this should be empty. Values is a comma separated channel string and/or channel
+         range string like '1-6,11'. -->
+    <string name="config_wifiSoftap2gChannelList" translatable="false" />
+
     <!-- Wifi driver supports WPA3 Simultaneous Authentication of Equals (WPA3-SAE) for softap -->
     <bool name="config_wifi_softap_sae_supported">true</bool>
 
@@ -58,14 +63,40 @@
     <!-- boolean indicating whether or not to reset max client setting configuration during cloud configuration restore -->
     <bool translatable="false" name ="config_wifiSoftapResetMaxClientSettingConfig">false</bool>
 
+    <!--
+    Controls the mapping between RSSI and RSSI levels.
+
+    RSSI                                    RSSI Level
+    (-infinity, thresholds[0])                       0
+    [threshold[0], threshold[1])                     1
+    [threshold[1], threshold[2])                     2
+    ...                                            ...
+    [threshold[len-2], threshold[len-1])         len-1
+    [threshold[len-1], +infinity)                  len
+
+    where:
+        [a, b) is the range of integers `n` such that a <= n < b
+        `threshold[i]` represents the i'th element of the config_wifiRssiLevelThresholds array
+        and `len` is the length of the config_wifiRssiLevelThresholds array.
+    -->
+    <integer-array name="config_wifiRssiLevelThresholds">
+        <item>-88</item>
+        <item>-82</item>
+        <item>-74</item>
+        <item>-63</item>
+    </integer-array>
+
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">10</integer>
 
-    <!-- Wifi driver supports IEEE80211AC for softap -->
-    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
-
     <!-- Wifi driver supports batched scan -->
     <bool name="config_wifi_batched_scan_supported">true</bool>
+
+    <!-- Enable Aware NDP interface selection on interface that already has network set up.
+     Note: the default AOSP Android does not support multiple networks on the same Aware NDI.
+     Enabling this configuration will restore legacy behavior but may result in incorrect behavior.
+     -->
+    <bool name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
 
     <!-- Indicates that the framework should auto append lower bands to band configuration for
          avoiding coexistence handling. For example: 5g only band will change to 2.4g|5g and
@@ -81,14 +112,14 @@
     <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
     <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
 
+    <!-- Indicates that p2p MAC randomization is supported on this device -->
+    <bool name="config_wifi_p2p_mac_randomization_supported">false</bool>
+
     <!-- True if the firmware supports connected MAC randomization -->
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 
     <!-- Use legacy wifi p2p dedicated address instead of randomize address. -->
     <bool translatable="false" name="config_tether_enable_legacy_wifi_p2p_dedicated_ip">true</bool>
-
-    <!-- Boolean indicating whether the wifi chipset has dual frequency band support -->
-    <bool name="config_wifi_dual_band_support">true</bool>
 
     <!-- Boolean indicating whether the wifi chipset has 5GHz frequency band support -->
     <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
