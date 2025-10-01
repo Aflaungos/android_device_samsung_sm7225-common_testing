@@ -37,6 +37,20 @@
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6 V 24.8888888888889 H 25.6 V 0 H 0 Z</string>
 
+    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
+
+    <array name="config_sfps_sensor_props_0">
+        <item>local:4630947175487691137</item> <!--item>displayId</item-->
+        <item>1080</item> <!--item>sensorLocationX</item-->
+        <item>940</item> <!--item>sensorLocationY</item-->
+        <item>200</item> <!--item>sensorRadius</item-->
+    </array>
+
     <!-- Whether Hearing Aid profile is supported -->
     <bool name="config_hearing_aid_profile_supported">true</bool>
 
