@@ -525,7 +525,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
-    libwifi-hal \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwfdaac_vendor \
@@ -535,19 +534,6 @@ PRODUCT_PACKAGES += \
     wpa_cli \
     wpa_supplicant \
     wpa_supplicant.conf
-    
-# Fix ADB
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.control_privapp_permissions=log
-    
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.control_privapp_permissions=log \
-    ro.secure=0 \
-    ro.debuggable=1 \
-    ro.adb.secure=0 \
-    persist.sys.usb.config=mtp,adb \
-    persist.service.adb.enable=1 \
-    persist.service.debuggable=1
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/icm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/icm.conf \
