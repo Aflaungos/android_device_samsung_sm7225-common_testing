@@ -10,7 +10,7 @@ allow hal_health_default battery_efs_file:file { rw_file_perms setattr };
 allow hal_health_default app_efs_file:dir { read write add_name search };
 allow hal_health_default app_efs_file:file { read write open create getattr setattr };
 
-allow hal_health_default sysfs:file { open  read };
+allow hal_health_default sysfs:file { open  read getattr };
 
 allow hal_health_default efs_file:dir search;
 

@@ -49,6 +49,7 @@ dontaudit rild {
     default_prop
 }:file read;
 
+dontaudit rild vendor_default_prop:property_service set;
 dontaudit rild default_prop:property_service set;
 dontaudit rild { default_prop system_prop }:file { map open getattr };
 

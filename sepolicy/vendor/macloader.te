@@ -43,5 +43,6 @@ allow macloader sysfs_wifi_writable:file { write open };
 
 # Don't set ro.vendor.wifi.sap.interface
 dontaudit macloader vendor_default_prop:property_service set;
+dontaudit macloader default_prop:property_service set;
 
 allow macloader vendor_file:system module_load;
