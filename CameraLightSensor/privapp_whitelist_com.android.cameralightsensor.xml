@@ -11,7 +11,7 @@
      limitations under the License.
 -->
 <permissions>
-   <privapp-permissions package="com.eurekateam.cameralightsensor">
+   <privapp-permissions package="com.android.cameralightsensor">
       <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
    </privapp-permissions>
 </permissions>

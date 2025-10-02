@@ -1,4 +1,4 @@
-package com.eurekateam.cameralightsensor
+package com.android.cameralightsensor
 
 import android.content.BroadcastReceiver
 import android.content.Context

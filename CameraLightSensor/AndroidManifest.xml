@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.eurekateam.cameralightsensor" android:sharedUserId="android.uid.system">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.android.cameralightsensor" android:sharedUserId="android.uid.system">
    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
    <uses-permission android:name="android.permission.CAMERA"/>

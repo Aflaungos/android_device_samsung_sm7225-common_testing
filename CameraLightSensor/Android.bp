@@ -8,11 +8,11 @@ android_app {
     privileged: true,
     certificate: "platform",
     static_libs: ["androidx.core_core"],
-    required: ["privapp_whitelist_com.eurekateam.cameralightsensor.xml"],
+    required: ["privapp_whitelist_com.android.cameralightsensor.xml"],
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_com.eurekateam.cameralightsensor.xml",
-    src: "privapp_whitelist_com.eurekateam.cameralightsensor.xml",
+    name: "privapp_whitelist_com.android.cameralightsensor.xml",
+    src: "privapp_whitelist_com.android.cameralightsensor.xml",
     sub_dir: "permissions",
 }
