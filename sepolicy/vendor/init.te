@@ -39,3 +39,5 @@ allow init vendor_persist_sensors_file:file { append };
 allow init servicemanager:binder { call };
 
 allow init init:netlink_socket { create bind write read };
+
+allow init clean_scratch_files_exec:lnk_file read;
