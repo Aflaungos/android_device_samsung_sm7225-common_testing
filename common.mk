@@ -155,8 +155,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung
 
 # CameraLightSensor
-PRODUCT_PACKAGES += \
-    CameraLightSensor
+# PRODUCT_PACKAGES += \
+#    CameraLightSensor
 
 # CAS
 PRODUCT_PACKAGES += \
