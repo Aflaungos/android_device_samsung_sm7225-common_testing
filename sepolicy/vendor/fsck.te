@@ -5,3 +5,4 @@ allow fsck { efs_block_device sec_efs_block_device }:blk_file rw_file_perms;
 
 # /dev/block/mmcblk0p3
 allow fsck emmcblk_device:blk_file rw_file_perms;
+allow fsck spu_block_device:blk_file rw_file_perms;
