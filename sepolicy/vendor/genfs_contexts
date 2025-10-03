@@ -36,6 +36,15 @@ genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:bat
 genfscon sysfs /devices/platform/soc/88c000.qcom,qup_uart/wakeup/                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_mp3/wakeup28                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/virtual/misc/msm_g711alaw/wakeup38                                                  u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-33/33-0063/power_supply/sm5451-charger/wakeup38         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-33/33-0049/sm5714-charger/power_supply/sm5714-charger/wakeup46                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/soc:i2c@17/i2c-31/31-0028/wakeup/wakeup32                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/888000.spi/spi_master/spi0/spi0.0/wakeup/wakeup40                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-33/33-0063/wakeup/wakeup37                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-33/33-0033/wakeup/wakeup73                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-33/33-0049/sm5714-fuelgauge/power_supply/sm5714-fuelgauge/wakeup41                       u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-33/33-0063/wakeup/                                      u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/984000.i2c/i2c-33/33-0049/wakeup/wakeup31                              u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/98c000.i2c/i2c-21/21-0057/wakeup/                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/3700000.qcom,lpass/subsys4/wakeup/                                     u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,wpss@8a00000/subsys2/                                         u:object_r:sysfs_wakeup:s0

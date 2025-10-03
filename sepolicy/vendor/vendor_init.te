@@ -13,4 +13,6 @@ dontaudit vendor_init cache_file:dir search;
 
 dontaudit vendor_init default_prop:file read;
 
+dontaudit vendor_init default_prop:property_service set;
+
 allow vendor_init vts_status_prop:file { read };
