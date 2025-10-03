@@ -71,5 +71,11 @@
 /(vendor|system/vendor)/bin/hw/vendor.samsung.hardware.thermal@1.0-service                                  u:object_r:hal_thermal_default_exec:s0
 /(vendor|system/vendor)/bin/hw/sehradiomanager                                                              u:object_r:sehradiomanager_exec:s0
 
+# Sys files (wakeup)
+/sys/devices(/platform)?/soc/(soc:gpio_keys|a600000.ssusb|soc:gpio_keys|18800000.qcom,icnss|88e0000.qcom,msm-eud)/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/misc/(msm_wma|msm_amrwb|msm_ape|msm_aac|msm_alac|msm_g711mlaw|msm_qcelp|msm_multi_aac|msm_g711alaw|msm_evrc|msm_mp3|msm_wmapro|msm_amrnb|msm_amrwbplus)/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+/sys/devices/virtual/wakeup/wakeup[0-9]+(/.*)? u:object_r:sysfs_wakeup:s0
+
 # clean_scratch_files
 /system/bin/clean_scratch_files                 u:object_r:clean_scratch_files_exec:s0
