@@ -17,12 +17,9 @@
 */
 -->
 <resources>    
-    <!-- Threshold in micro watts above which a charger is rated as "fast"; 2.16A @ 5V  -->
-    <integer name="config_chargingFastThreshold">7500000</integer>
+    <!-- Threshold in micro watts above which a charger is rated as "fast"; 1.67A @ 9V  -->
+    <integer name="config_chargingFastThreshold">1500000</integer>
 
     <!-- Threshold in micro watts above which a charger is rated as "fast"; 2.16A @ 5V  -->
-    <integer name="config_chargingFastThresholdv2">20000000</integer>
-
-    <!-- Threshold in micro watts above which a charger is rated as "fast"; 2.16A @ 5V  -->
-    <integer name="config_chargingSlowlyThreshold">5000000</integer>
+    <integer name="config_chargingSlowlyThreshold">1200000</integer>
 </resources>
