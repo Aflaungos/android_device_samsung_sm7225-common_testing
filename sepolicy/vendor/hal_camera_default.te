@@ -14,7 +14,6 @@ get_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, vendor_display_prop)
 
 allow hal_camera_default camera2_extensions_prop:file { getattr map open };
-allow hal_camera_default camera_calibration_prop:file { getattr map open };
 allow hal_camera_default camerax_extensions_prop:file { getattr map open };
 
 # EFS
