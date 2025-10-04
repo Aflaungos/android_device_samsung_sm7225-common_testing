@@ -41,13 +41,6 @@ allow init init:netlink_socket { create bind write read };
 
 allow init clean_scratch_files_exec:lnk_file read;
 
-add_service(init, hal_light_service)
-add_service(init, hal_sensors_service)
-add_service(init, hal_vibrator_service)
-add_hwservice(init, default_android_hwservice)
-add_hwservice(init, hal_nfc_hwservice)
-add_hwservice(init, hidl_base_hwservice)
-
 # System Suspend
 allow init hal_system_suspend_service:service_manager find;
 

@@ -11,5 +11,3 @@ binder_call(sehradiomanager, hwservicemanager)
 binder_call(sehradiomanager, servicemanager)
 binder_call(servicemanager, sehradiomanager)
 hal_client_domain(sehradiomanager, hal_telephony)
-
-allow sehradiomanager default_android_service:service_manager find;
