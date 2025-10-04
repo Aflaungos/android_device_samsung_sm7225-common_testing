@@ -41,9 +41,6 @@ allow init init:netlink_socket { create bind write read };
 
 allow init clean_scratch_files_exec:lnk_file read;
 
-# System Suspend
-allow init hal_system_suspend_service:service_manager find;
-
 allow init sysfs_sensors:file { open write };
 allow init sysfs_touchscreen_writable:file { open write };
 
