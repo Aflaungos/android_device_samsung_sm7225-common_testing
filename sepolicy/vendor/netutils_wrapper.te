@@ -14,3 +14,5 @@ allow netutils_wrapper proc_net:file write;
 
 # /mnt/vendor/efs/mps_code.dat
 allow netutils_wrapper efs_file:file { read write };
+
+dontaudit netutils_wrapper imei_efs_file:file read;
