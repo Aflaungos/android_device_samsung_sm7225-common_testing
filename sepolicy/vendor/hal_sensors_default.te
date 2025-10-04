@@ -47,7 +47,3 @@ allow hal_sensors_default property_socket:sock_file write;
 unix_socket_connect(hal_sensors_default, property, init)
 
 dontaudit hal_sensors_default { default_prop build_bootimage_prop }:file { getattr map open read };
-
-type hal_sensors_server, domain; 
-hal_server_domain(hal_sensors_server, hal_sensors)
-allow hal_sensors_server hal_sensors_service:service_manager { add };
