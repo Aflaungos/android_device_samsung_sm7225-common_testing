@@ -1,0 +1,1 @@
+dontaudit untrusted_app aac_drc_prop:file { getattr map open };
