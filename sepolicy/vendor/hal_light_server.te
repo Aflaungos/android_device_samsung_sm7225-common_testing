@@ -1,2 +1,0 @@
-hal_server_domain(hal_light_server, hal_light)
-allow hal_light_server hal_light_service:service_manager { add };
