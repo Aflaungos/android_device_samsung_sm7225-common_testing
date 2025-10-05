@@ -12,6 +12,7 @@ binder_call(hal_camera_default, system_server)
 get_prop(hal_camera_default, vendor_mpctl_prop)
 get_prop(hal_camera_default, vendor_camera_prop)
 get_prop(hal_camera_default, vendor_display_prop)
+set_prop(hal_camera_default, sec_camera_prop)
 
 allow hal_camera_default camera2_extensions_prop:file { getattr map open };
 allow hal_camera_default camerax_extensions_prop:file { getattr map open };
@@ -28,3 +29,9 @@ allow hal_camera_default camera_config_prop:file { read open getattr map };
 allow hal_camera_default hal_system_suspend_service:service_manager find;
 allow hal_camera_default hal_thermal_samsung_hwservice:hwservice_manager find;
 binder_call(hal_camera_default, hal_thermal_default)
+
+r_dir_file(hal_camera_default, app_efs_file)
+r_dir_file(hal_camera_default, efs_file)
+r_dir_file(hal_camera_default, mnt_vendor_file)
+r_dir_file(hal_camera_default, vendor_sysfs_camera)
+r_dir_file(hal_camera_default, vendor_sysfs_sensors)
