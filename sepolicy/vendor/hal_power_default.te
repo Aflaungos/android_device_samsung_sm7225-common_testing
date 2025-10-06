@@ -3,6 +3,8 @@
 # /dev/cpu_dma_latency
 allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
 
+allow hal_power_default sysfs_battery:file { open write };
+
 # /dev/stune/top-app/schedtune.boost
 allow hal_power_default cgroup:file rw_file_perms;
 

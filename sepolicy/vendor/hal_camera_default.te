@@ -8,6 +8,8 @@ allow hal_camera_default sysfs_camera:dir search;
 allow hal_camera_default sysfs_camera_writable:file { read write open getattr };
 allow hal_camera_default rild:unix_stream_socket connectto;
 
+hal_client_domain(hal_camera_default, hal_thermal)
+
 binder_call(hal_camera_default, system_server)
 get_prop(hal_camera_default, vendor_mpctl_prop)
 get_prop(hal_camera_default, vendor_camera_prop)
