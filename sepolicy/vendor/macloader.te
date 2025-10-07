@@ -13,9 +13,6 @@ allow macloader self:capability { net_admin sys_module };
 allow macloader self:udp_socket create_socket_perms;
 allowxperm macloader self:udp_socket ioctl { 0x8913 0x8914 };
 
-allow macloader convergence_vendor_data_file:dir create_dir_perms;
-allow macloader convergence_vendor_data_file:file create_file_perms;
-
 # /data/vendor/conn
 allow macloader conn_vendor_data_file:dir rw_dir_perms;
 allow macloader conn_vendor_data_file:file create_file_perms;
