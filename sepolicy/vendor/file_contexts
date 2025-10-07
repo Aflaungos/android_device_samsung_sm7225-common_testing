@@ -39,9 +39,8 @@
 /dev/ttyHS0                                                                                                 u:object_r:ttyhs_device:s0
 /dev/ttyHS8                                                                                                 u:object_r:ttyhs_device:s0
 
-#RootFS
+# RootFS
 /carrier(/.*)?                                                                                              u:object_r:carrier_file:s0
-/dqmdbg(/.*)?                                                                                               u:object_r:dqmdbg_file:s0
 /misc(/.*)?                                                                                                 u:object_r:misc_file:s0
 /omr(/.*)?                                                                                                  u:object_r:omr_file:s0
 /optics(/.*)?                                                                                               u:object_r:vendor_file:s0
