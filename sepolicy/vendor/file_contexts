@@ -58,7 +58,7 @@
 /efs/nfc(/.*)?                                                                                              u:object_r:nfc_efs_file:s0
 /efs/pfw_data(/.*)?                                                                                         u:object_r:pfw_efs_file:s0
 /efs/recovery(/.*)?                                                                                         u:object_r:sec_efs_file:s0
-/efs/sec_efs(/.*)?                                                                                          u:object_r:sec_efs_file:s
+/efs/sec_efs(/.*)?                                                                                          u:object_r:sec_efs_file:s0
 /efs/usb_hw_param(/.*)?                                                                                     u:object_r:sec_efs_file:s0
 /efs/tas25xx(/.*)?                                                                                          u:object_r:audio_efs_file:s0
 /mnt/vendor/efs(/.*)?                                                                                       u:object_r:efs_file:s0
@@ -94,7 +94,7 @@
 /sys/devices/virtual/misc/msm_[a-z0-9]+(_[a-z0-9]+)?/wakeup([0-9])+(/.*)?                                   u:object_r:sysfs_wakeup:s0
 /sys/devices/platform/soc/soc:(\.)?qcom,[^/]+/(subsys[0-9]/)?wakeup(/.*)?                                   u:object_r:sysfs_wakeup:s0
 /sys/devices/platform/soc/soc:i2c@[0-9]+/i2c-[0-9]+/[0-9]+-[a-z0-9]+/wakeup(/.*)?                           u:object_r:sysfs_wakeup:s0
-/sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]/[0-9]-[0-9a-f]+/input/input[0-9]+/enabled                u:object_r:sysfs_touchscreen:s0
+/sys/devices/platform/soc/[a-z0-9]+\.i2c/i2c-[0-9]/[0-9]-[0-9a-f]+/input/input[0-9]+/enabled                u:object_r:sysfs_sec_touchscreen:s0
 /sys/devices(/platform)?/soc/[a-z0-9]+\.i2c/i2c-[0-9]+/[0-9]+-[a-z0-9]+/input/input[0-9]+(/.*)?             u:object_r:sysfs_touchscreen_writable:s0
 /sys/devices(/platform)?/soc/(soc:gpio_keys|a600000.ssusb|soc:gpio_keys|18800000.qcom,icnss|88e0000.qcom,msm-eud)/wakeup/wakeup[0-9]+(/.*)?         u:object_r:sysfs_wakeup:s0
 /sys/devices/virtual/diag/diag/wakeup[0-9]+(/.*)?                                                           u:object_r:sysfs_wakeup:s0
