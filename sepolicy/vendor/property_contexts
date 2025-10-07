@@ -31,7 +31,6 @@ vendor.calls.slotid                              u:object_r:vendor_radio_prop:s0
 
 # Sensors
 vendor.sensor.file.permission                    u:object_r:vendor_sensors_prop:s0
-u:object_r:sns_camera_light_prop:s0
 
 # Tee
 vendor.sys.qseecomd.enable                       u:object_r:vendor_qseecomd_prop:s0
