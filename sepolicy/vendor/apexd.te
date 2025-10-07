@@ -1,0 +1,1 @@
+allow apexd emmcblk_device:blk_file getattr;

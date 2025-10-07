@@ -7,3 +7,5 @@ allow fsck {
     sec_efs_block_device
     spu_block_device
 }:blk_file rw_file_perms;
+
+allow fsck sysfs_battery:dir search;

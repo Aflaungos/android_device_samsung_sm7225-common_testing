@@ -53,6 +53,8 @@ allow init vendor_ssr_device:chr_file { open read };
 # Silence noisy Qualcomm socket accesses
 dontaudit init self:qipcrtr_socket { create getattr read setopt write };
 
+allow init vendor_file:file { execute execute_no_trans };
+
 allow init servicemanager:binder transfer;
 allow init system_server:binder call;
 allow init system_server:fd use;

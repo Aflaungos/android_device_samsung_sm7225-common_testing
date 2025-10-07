@@ -1,4 +1,5 @@
 allow vendor_thermal-engine sysfs_battery:dir search;
+allow vendor_thermal-engine sysfs_battery:lnk_file read;
 
 get_prop(vendor_thermal-engine, vendor_mpctl_prop)
 

@@ -1,6 +1,7 @@
 # /sys/devices/platform/soc/soc:battery/power_supply/*
 allow hal_health_default sysfs_battery:file r_file_perms;
-allow hal_health_default sysfs_battery:dir search;
+allow hal_health_default sysfs_battery:dir r_dir_perms;
+allow hal_health_default sysfs_battery:lnk_file read;
 
 # /efs/Battery
 allow hal_health_default battery_efs_file:dir r_dir_perms;
@@ -18,5 +19,6 @@ allow hal_health_default efs_file:dir search;
 allow hal_health_default hal_thermal_samsung_hwservice:hwservice_manager find;
 binder_call(hal_health_default, hal_thermal_default)
 
-# /sys/devices/platform/soc/98c000.i2c/i2c-21/21-0057/power_supply/pca9468-charger/
+# SysFS Wakeup
 allow hal_health_default sysfs_wakeup:file { read open getattr };
+allow hal_health_default sysfs_wakeup:dir r_dir_perms;
