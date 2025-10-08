@@ -54,7 +54,6 @@ allow init vendor_ssr_device:chr_file { open read };
 dontaudit init self:qipcrtr_socket { create getattr read setopt write };
 
 allow init pm_proxy_helper_exec:file { execute };
-type_transition init pm_proxy_helper_exec:process vendor_app;
 
 allow init servicemanager:binder transfer;
 allow init system_server:binder call;
