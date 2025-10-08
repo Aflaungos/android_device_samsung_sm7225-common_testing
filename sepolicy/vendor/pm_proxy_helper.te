@@ -7,9 +7,6 @@ type pm_proxy_helper_exec, exec_type, vendor_file_type, file_type;
 # Domain transition from init
 init_daemon_domain(pm_proxy_helper)
 
-# Allow pm_proxy_helper to run as a vendor process
-vendor_domain(pm_proxy_helper)
-
 # Additional permissions if needed
 allow pm_proxy_helper self:process *;
 allow pm_proxy_helper vendor_file:file { read write open };
