@@ -8,5 +8,4 @@ type pm_proxy_helper_exec, exec_type, vendor_file_type, file_type;
 init_daemon_domain(pm_proxy_helper)
 
 # Additional permissions if needed
-allow pm_proxy_helper self:process *;
-allow pm_proxy_helper vendor_file:file { read write open };
+allow pm_proxy_helper vendor_file:file { read open };
