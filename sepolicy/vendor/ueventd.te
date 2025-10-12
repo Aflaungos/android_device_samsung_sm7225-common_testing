@@ -5,4 +5,4 @@ dontaudit ueventd gsi_metadata_file:dir search;
 
 allow ueventd tmpfs:lnk_file read;
 
-allow ueventd emmcblk_device:blk_file create;
+allow ueventd emmcblk_device:blk_file { create getattr setattr };

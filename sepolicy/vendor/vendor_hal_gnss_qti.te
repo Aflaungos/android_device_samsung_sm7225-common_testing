@@ -1,4 +1,6 @@
 allow vendor_hal_gnss_qti sysfs_npu:file { read open };
 allow vendor_hal_gnss_qti sysfs_battery:dir search;
+allow vendor_hal_gnss_qti sysfs_battery:file { open write };
+allow vendor_hal_gnss_qti sysfs_battery:lnk_file read;
 
 dontaudit vendor_hal_gnss_qti { default_prop system_prop }:file { getattr map open read };

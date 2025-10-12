@@ -24,3 +24,6 @@ binder_call(system_app, hal_wifi_supplicant_default)
 binder_call(system_app, vold)
 
 dontaudit system_app vendor_default_prop:file { getattr open read map };
+dontaudit system_app system_suspend_control_service:service_manager { find };
+dontaudit system_app system_suspend_control_internal_service:service_manager { find };
+dontaudit system_app tracingproxy_service:service_manager { find };
