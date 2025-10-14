@@ -56,3 +56,4 @@ odm	/odm	f2fs	ro	wait,avb,logical,first_stage_mount
 # VOLD:samsung/common/fstab_dynamic_partition.samsung
 /devices/platform/soc/8804000.sdhci/mmc_host*        auto    auto    default    voldmanaged=sdcard:auto
 /devices/platform/soc/a600000.ssusb/a600000.dwc3*    auto    vfat    default    voldmanaged=usb:auto
+/devices/platform/soc/1da4000.ufshc_card/host*       auto    vfat    nosuid,nodev    wait,voldmanaged=sdcard1:auto,encryptable=footer
