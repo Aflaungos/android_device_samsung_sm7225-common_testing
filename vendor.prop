@@ -183,7 +183,6 @@ ro.hardware.gatekeeper=mdfpp
 
 # Keystore
 ro.hardware.keystore=mdfpp
-ro.hardware.keystore_desede=true
 ro.security.keystore.keytype=sakv2,gak
 
 # Light
