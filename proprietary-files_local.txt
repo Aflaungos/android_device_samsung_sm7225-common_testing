@@ -50,7 +50,6 @@ vendor/lib/rfsa/adsp/libapps_mem_heap.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
 vendor/lib64/libSNPE.so
 vendor/lib64/libsnpe_wrapper.so
-vendor/lib/libchilog.so
 vendor/lib64/libchilog.so
 vendor/lib/libsec2qc_conversion.so
 vendor/lib64/libsec2qc_conversion.so
@@ -219,7 +218,6 @@ vendor/lib64/libEventFinder.camera.samsung.so
 vendor/lib/libheifcapture.so
 vendor/lib/libEventFinder.camera.samsung.so
 vendor/lib/libLocalTM_wrapper.camera.samsung.so
-vendor/lib/libipebpsstriping.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libcamxncs.so
 vendor/lib64/libc++_shared.so
@@ -243,9 +241,6 @@ vendor/lib/libSceneDetector_v1.camera.samsung.so
 vendor/lib/libarcsoft_multi_frame_video_hdr.so
 vendor/lib/libarcsoft_object_tracking.so
 vendor/lib/libcamera2ndk_vendor.so
-vendor/lib/libcamerapostproc.so
-vendor/lib/libcamxexternalformatutils.so
-vendor/lib/libcamxifestriping.so
 vendor/lib/libmultiobject_tracker.so
 vendor/lib/libscenedetector.uniplugin@1.0.so
 vendor/lib/libsnap_vndk.so
@@ -287,13 +282,11 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib64/libmmcamera_faceproc2.so
-vendor/lib/libtriplecam_image_optical_zoom.so
 vendor/lib64/libtriplecam_image_optical_zoom.so
 vendor/lib/libtriplecam_optical_zoom_control.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
 vendor/lib/libtriplecam_video_optical_zoom.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|ca1f5520f940b5e8b7a66a25af11eb0daa76ec86
 vendor/lib64/camera.device@1.0-impl.so
 vendor/lib64/camera.device@3.2-impl.so
@@ -306,15 +299,12 @@ vendor/lib/camera/components/com.qti.hvx.addconstant.so
 vendor/lib/camera/components/com.samsung.node.multi_frame_video_hdr.so
 vendor/lib/camera/components/com.ss.stats.aec.so
 vendor/lib/camera/components/com.ss.stats.af.so
-vendor/lib/camera/ois_mcu_stm32g_fw.bin
 vendor/lib/camera/components/com.ss.stats.awb.so
 vendor/lib/camera/components/com.ss.stats.pdlib.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_recording.so
 vendor/lib/camera/components/com.samsung.node.smooth_transition.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_vdis.so
 vendor/lib/camera/components/com.qti.hvx.binning.so
-vendor/lib/camera/com.qti.tuned.default.bin
-vendor/lib/camera/com.samsung.tuned.sony_imx355_front.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx355.bin
 vendor/lib64/camera/com.samsung.tuned.sony_imx355_front.bin
@@ -337,28 +327,16 @@ vendor/lib64/vendor.samsung.hardware.camera.device@5.0-impl.so
 vendor/lib64/vendor.samsung.hardware.camera.device@5.0.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0-legacy.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib64/libsensorndkbridge.so
-vendor/lib/libsuper_night_interface.so
-vendor/lib/libcamera_nn_stub.so
-vendor/lib/libscveCommon.so
-vendor/lib/libuniplugin.so
 vendor/lib/libHprFace_GAE_api.camera.samsung.so
-vendor/lib/libcamxswprocessalgo.so
-vendor/lib/libscveObjectTracker.so
 vendor/lib/libjpegQtable_interface.so
 vendor/lib/libdualcam_refocus_image.so
 vendor/lib/libFacePreProcessing.camera.samsung.so
 vendor/lib/libimagecodec_native.quram.so
 vendor/lib/libHandGesture.camera.samsung.so
 vendor/lib/libhand_interaction.uniplugin@1.0.so
-vendor/lib/libarcsoft_picportrait_video.so
-vendor/lib/libcamxstatscore.so
 vendor/lib/libexifa.camera.samsung.so
-vendor/lib/libcamxfdengine.so
-vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib/libjpegencoder_sw.unifunc.so
-vendor/lib/hw/camera.unihal.default.so
 vendor/lib/hw/camera.qcom.so
 vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/libvideobeauty.arcsoft.so
@@ -367,25 +345,13 @@ vendor/lib/libfocuspeaking.so
 vendor/lib/libscaler_hw.unifunc.so
 vendor/lib/libFace_Landmark_API.camera.samsung.so
 vendor/lib/libOpenCv.camera.samsung.so
-vendor/lib/libscveCommon_stub.so
-vendor/lib/libqcwrappercommon.so
-vendor/lib/libscveObjectSegmentation_stub.so
 vendor/lib/libsocial_image_enhancement.uniplugin@1.0.so
-vendor/lib/libcamxfdalgo.so
-vendor/lib/camera/com.samsung.sensormodule.0_lsi_s5kjn1.bin
-vendor/lib/camera/com.samsung.sensormodule.13_sony_imx355_front_full.bin
-vendor/lib/camera/com.samsung.tuned.lsi_gc02m1.bin
 vendor/lib/camera/com.samsung.tuned.lsi_s5kjn1.bin
-vendor/lib/camera/com.samsung.tuned.sony_imx355.bin
-vendor/lib/camera/com.samsung.tuned.lsi_s5kjn1.bin
-vendor/lib/camera/com.samsung.sensormodule.1_sony_imx355_front.bin
 vendor/lib/camera/com.samsung.sensor.gc02m1.so
 vendor/lib/camera/com.samsung.sensor.imx355.so
 vendor/lib/camera/com.samsung.sensor.imx355_front.so
 vendor/lib/camera/com.samsung.sensor.s5kjn1.so
-vendor/lib/camera/com.samsung.sensormodule.2_sony_imx355.bin
 vendor/lib/camera/com.qti.eeprom.sec2qcconversion.so
-vendor/lib/camera/com.samsung.sensormodule.4_lsi_gc02m1_macro.bin
 vendor/lib/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib/camera/components/com.qti.eisv2.so
 vendor/lib/camera/components/com.qti.eisv3.so
@@ -412,23 +378,17 @@ vendor/lib/camera/components/com.samsung.node.uniplugin_capture.so
 vendor/lib/camera/components/com.samsung.node.uniplugin_preview.so
 vendor/lib/camera/components/libdepthmapwrapper.so
 vendor/lib/libsegmentationeffect.uniplugin@1.0.so
-vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/libBeauty_v4.camera.samsung.so
 vendor/lib/libhypermotion_core.so
-vendor/lib/libsensorlistener.so
 vendor/lib/libvideobeauty_interface.so
 vendor/lib/libpadm.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib/libfocuspeaking_interface.so
 vendor/lib/libimage_enhancement.arcsoft.so
 vendor/lib/libvideobeauty.uniplugin@1.0.so
-vendor/lib/libscveObjectSegmentation.so
 vendor/lib/liblivefocus_capture_engine.so
 vendor/lib/libsmartfocus_interface.so
-vendor/lib/libswregistrationalgo.so
 vendor/lib/libhandgesture.arcsoft.so
-vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/liblivefocus_preview_engine.so
 vendor/lib/libDualCamBokehCapture.camera.samsung.so
 vendor/lib/libhypermotion_interface.so
@@ -436,13 +396,8 @@ vendor/lib/liblivefocus_preview_interface.so
 vendor/lib/libhigh_dynamic_range_bokeh.so
 vendor/lib/libswldc_capture_core.camera.samsung.so
 vendor/lib/libSEF.quram.so
-vendor/lib/libcamxtintlessalgo.so
-vendor/lib/libmpbase.so
-vendor/lib/unihal_main@2.15.so
-vendor/lib/unihal_cutils@2.15.so
 vendor/lib/libLocalTM_capture_core.camera.samsung.so
 vendor/lib/libvdis_core.so
-vendor/lib/unihal_uniplugin@1.0.so
 vendor/lib/libface_landmark.arcsoft.so
 vendor/lib64/camera/com.samsung.sensormodule.0_lsi_s5kjn1.bin
 vendor/lib64/camera/com.samsung.sensormodule.1_sony_imx355_front.bin
@@ -544,7 +499,6 @@ vendor/lib64/libDLInterface.camera.samsung.so
 vendor/lib64/libcamxstatscore.so
 vendor/lib64/libexifa.camera.samsung.so
 vendor/lib64/libcamxfdengine.so
-vendor/lib/libcamximageformatutils.so
 vendor/lib64/libcamximageformatutils.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libjpegencoder_sw.unifunc.so
@@ -565,11 +519,8 @@ vendor/lib64/libsocial_image_enhancement.uniplugin@1.0.so
 vendor/lib64/libcamxfdalgo.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
 vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
-vendor/lib/libofflinelog.so
 vendor/lib64/libofflinelog.so
-vendor/lib/libbitmlengine.so
 vendor/lib64/libbitmlengine.so
-vendor/lib/libcamxfacialfeatures.so
 vendor/lib64/libcamxfacialfeatures.so
 
 # Camera (OOT)
@@ -1035,12 +986,6 @@ vendor/bin/pm-service
 vendor/lib/libperipheral_client.so
 vendor/lib64/libperipheral_client.so
 
-# Protobuf
-vendor/lib/libprotobuf-cpp-full-3.9.1.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
-vendor/lib64/libprotobuf-cpp-full-3.9.1.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
-
 # Public libraries
 vendor/etc/public.libraries.txt
 
@@ -1368,3 +1313,8 @@ vendor/firmware/wlanmdsp.mbn
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/regdb.bin
 vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+
+# Wifi Display
+vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
+vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
+vendor/etc/init/wfdvndservice.rc
