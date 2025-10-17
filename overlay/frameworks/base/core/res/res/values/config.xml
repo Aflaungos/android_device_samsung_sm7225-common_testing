@@ -45,7 +45,7 @@
     </array>
 
     <array name="config_sfps_sensor_props_0">
-        <item>local:4630947175487691137</item> <!--item>displayId</item-->
+        <item>main</item> <!--item>displayId</item-->
         <item>1080</item> <!--item>sensorLocationX</item-->
         <item>940</item> <!--item>sensorLocationY</item-->
         <item>200</item> <!--item>sensorRadius</item-->
@@ -56,6 +56,7 @@
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps" translatable="false">true</bool>
+    <bool name="config_is_sidefps">true</bool>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
          autodetected from the Configuration. -->
