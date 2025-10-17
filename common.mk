@@ -555,7 +555,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     bootable/deprecated-ota \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung
