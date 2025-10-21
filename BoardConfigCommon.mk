@@ -178,9 +178,6 @@ SOONG_CONFIG_samsungCameraVars += needs_sec_reserved_field
 
 SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
 
-# Keymaster
-TARGET_KEYMASTER_VARIANT := samsung
-
 # Lights
 $(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
 
