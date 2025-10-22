@@ -154,7 +154,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.samsung
+    android.hardware.camera.provider-service.samsung \
+    libui_shim.vendor
 
 # CameraLightSensor
 # PRODUCT_PACKAGES += \
