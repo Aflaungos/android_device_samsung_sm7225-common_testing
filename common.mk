@@ -452,7 +452,8 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PACKAGES += \
     secril_config_svc \
-    sehradiomanager
+    sehradiomanager \
+    libjsoncpp.vendor
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
