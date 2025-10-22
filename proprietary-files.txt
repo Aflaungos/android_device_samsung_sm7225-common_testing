@@ -327,8 +327,6 @@ vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # CNE
-vendor/bin/mutualex;DISABLE_CHECKELF
-vendor/etc/init/mutualex.rc
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/lib/libcneoplookup.so
 vendor/lib64/libcneoplookup.so
@@ -948,8 +946,3 @@ vendor/etc/wifi/aoa_cldb_falcon.bin
 vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/lib/libqsap_sdk.so
 vendor/lib64/libqsap_sdk.so
-
-# Wifi Display
-vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc
-vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/etc/init/wfdvndservice.rc
