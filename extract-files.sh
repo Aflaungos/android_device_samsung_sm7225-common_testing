@@ -87,6 +87,10 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
+	vendor/lib64/nfc_nci_nxpsn.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --add-needed "libbase_shim.so" "${2}"
+            ;;
 	vendor/lib/libwvhidl.so|vendor/lib/mediadrm/libwvdrmengine.so)
 	    [ "$2" = "" ] && return 0
             "${PATCHELF}" --add-needed "libcrypto_shim.so" "${2}"
