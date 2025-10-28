@@ -176,7 +176,7 @@ drm.service.enabled=true
 
 # Fingerprint
 ro.vendor.fingerprint.type=side
-ro.vendor.fingerprint.sensor_location=1080|940|200|local:4630947232161729153
+ro.vendor.fingerprint.sensor_location=1080|825|200|local:4630947232161729153
 
 # Gatekeeper
 ro.hardware.gatekeeper=mdfpp
