@@ -757,14 +757,12 @@ vendor/bin/netmgrd
 vendor/bin/hw/rild
 vendor/bin/adpl
 vendor/bin/shsusrd
-vendor/bin/ssgtzd
 vendor/bin/ipacm-diag
 vendor/bin/tftp_server
 vendor/bin/ks
 vendor/bin/rmt_storage
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/shsusrd.rc
-vendor/etc/init/ssgtzd.rc
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/locale/plmn_delta_eng.bin
