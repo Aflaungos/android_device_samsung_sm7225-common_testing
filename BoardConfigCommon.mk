@@ -204,6 +204,9 @@ TARGET_USES_HWC2 := true
 USE_OPENGL_RENDERER := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 
+# Lights
+$(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
+
 # Media
 TARGET_USES_ION := true
 
