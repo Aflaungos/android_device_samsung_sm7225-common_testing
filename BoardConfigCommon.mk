@@ -173,7 +173,8 @@ SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifest.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml
 
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
