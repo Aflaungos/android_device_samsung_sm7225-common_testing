@@ -147,7 +147,7 @@ BOARD_ODMIMAGE_EXTFS_INODE_COUNT           	  := -1
 
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 
-# Out dirs
+# Out Dirs
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_ODM := odm
@@ -169,26 +169,12 @@ SOONG_CONFIG_samsungCameraVars += needs_sec_reserved_field
 
 SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
 
-# HIDL manifests
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifest.xml
-
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml \
-    hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
-
-DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
 # FM
 BOARD_HAS_QCA_FM_SOC := cherokee
 BOARD_HAVE_QCOM_FM := true
-
-# GPU
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
 
 # Graphics
 ANDROID_ENABLE_RENDERSCRIPT := true
@@ -210,17 +196,31 @@ TARGET_USES_HWC2 := true
 USE_OPENGL_RENDERER := true
 VSYNC_EVENT_PHASE_OFFSET_NS := 2000000
 
+# GPU
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno619
+
+# HIDL Manifests
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifest.xml
+
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml \
+    hardware/samsung/vintf/samsung_framework_compatibility_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
+
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
+
 # Lights
 $(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
 
 # Media
 TARGET_USES_ION := true
 
-# RIL
-ENABLE_VENDOR_RIL_SERVICE := true
-
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
+
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
@@ -236,10 +236,6 @@ BOARD_VENDOR := samsung
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-
-# Treble
-BOARD_VNDK_VERSION := current
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Vibrator
 $(call soong_config_set,samsungVibratorVars,duration_amplitude,true)
