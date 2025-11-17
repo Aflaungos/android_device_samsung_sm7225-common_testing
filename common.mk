@@ -27,9 +27,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
 
-# A/B configuration
-AB_OTA_UPDATER := false
-
 # Init files and fstab
 PRODUCT_PACKAGES += \
     fstab.default \
@@ -130,6 +127,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
+
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider-service.samsung
 
 # Graphics
 PRODUCT_AAPT_CONFIG := normal

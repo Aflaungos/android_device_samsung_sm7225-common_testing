@@ -21,6 +21,9 @@ BUILD_BROKEN_DUP_SYSPROP := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_INCORRECT_PARTITION_IMAGES := true
 
+# A/B configuration
+AB_OTA_UPDATER := false
+
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
@@ -159,6 +162,12 @@ TARGET_PROVIDES_AUDIO_EXTNS := true
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
+
+# Camera
+SOONG_CONFIG_NAMESPACES += samsungCameraVars
+SOONG_CONFIG_samsungCameraVars += needs_sec_reserved_field
+
+SOONG_CONFIG_samsungCameraVars_needs_sec_reserved_field := true
 
 # HIDL manifests
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifest.xml
