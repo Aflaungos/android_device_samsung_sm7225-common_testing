@@ -247,8 +247,6 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0.vendor \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0.vendor \
     libhidltransport \
