@@ -191,24 +191,12 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.memtrack-service \
-    libsdmcore \
-    libsdedrm \
-    libtinyxml \
-    libtinyxml2 \
-    hwcomposer.lito \
     gralloc.qcom \
-    libqdMetaData \
-    libdisplayconfig.qti \
-    vendor.qti.hardware.display.mapper@2.0.vendor \
-    vendor.qti.hardware.display.mapper@3.0.vendor \
-    vendor.qti.hardware.display.mapper@4.0.vendor \
-    vendor.display.config@2.0.vendor
-
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/android.hardware.graphics.composer@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.4-service.rc
+    libsdmcore \
+    libsdedrm
 
 # Doze
 PRODUCT_PACKAGES += \
