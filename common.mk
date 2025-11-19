@@ -77,6 +77,8 @@ PRODUCT_PACKAGES += \
     init.qti.media.sh \
     init.qti.qcv.sh
 
+$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sm7225)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
