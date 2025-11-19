@@ -413,6 +413,8 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # QMI
+TARGET_FWK_SUPPORTS_FULL_VALUEADDS := true
+
 PRODUCT_PACKAGES += \
     libjson \
     ibsqlite.vendor
