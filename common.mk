@@ -473,6 +473,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
     libcamera_metadata.vendor
 
+# Touch features
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.sm7225
+
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
