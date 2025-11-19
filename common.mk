@@ -456,6 +456,8 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge
 
 # Telephony
+$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
+
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
