@@ -214,6 +214,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# File System
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
