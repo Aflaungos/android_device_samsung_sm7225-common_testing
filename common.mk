@@ -337,6 +337,10 @@ PRODUCT_PACKAGES += \
     nqnfcinfo \
     Tag
 
+PRODUCT_COPY_FILES += \
+    device/samsung/sm7225-common/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    device/samsung/sm7225-common/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf
+
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
