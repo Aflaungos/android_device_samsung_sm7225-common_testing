@@ -500,6 +500,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libcrypto-v33
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.qti
