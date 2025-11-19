@@ -166,6 +166,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images_vendor
+
 # Graphics
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -210,8 +214,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.samsung \
+    android.hardware.health-service.samsung-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
