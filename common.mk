@@ -147,6 +147,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    android.hardware.bluetooth.audio-impl \
     android.hardware.bluetooth.audio@2.0-impl
 
 # Camera
