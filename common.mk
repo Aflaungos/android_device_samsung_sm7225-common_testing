@@ -159,7 +159,8 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.samsung
+    android.hardware.camera.provider-service.samsung \
+    libui_shim.vendor
 
 # Graphics
 PRODUCT_AAPT_CONFIG := normal
