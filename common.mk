@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libtinyxml2 \
     hwcomposer.lito \
-    gralloc.lito \
+    gralloc.qcom \
     memtrack.lito \
     libqdMetaData \
     libdisplayconfig.qti \
