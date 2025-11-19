@@ -162,6 +162,10 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.samsung \
     libui_shim.vendor
 
+# CAS
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+
 # Graphics
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
