@@ -221,6 +221,10 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
 
+# FM
+PRODUCT_PACKAGES += \
+    FMRadio
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
