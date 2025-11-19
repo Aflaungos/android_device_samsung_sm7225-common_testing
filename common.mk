@@ -487,7 +487,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
+    android.hardware.vibrator-service.samsung
 
 # Wifi
 #PRODUCT_PACKAGES += \
