@@ -193,8 +193,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.allocator-service \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
+    vendor.qti.hardware.memtrack-service \
     android.hardware.renderscript@1.0-impl \
     libsdmcore \
     libsdedrm \
@@ -202,7 +201,6 @@ PRODUCT_PACKAGES += \
     libtinyxml2 \
     hwcomposer.lito \
     gralloc.qcom \
-    memtrack.lito \
     libqdMetaData \
     libdisplayconfig.qti \
     vendor.qti.hardware.display.mapper@2.0.vendor \
