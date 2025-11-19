@@ -270,7 +270,7 @@ $(call soong_config_set,samsungVars,target_keymaster4_library,//vendor/samsung/s
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.samsung
+    android.hardware.light-service.samsung 
 
 # Lineage Health
 PRODUCT_PACKAGES += \
