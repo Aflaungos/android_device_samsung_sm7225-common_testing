@@ -237,10 +237,12 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/recovery/root/fstab.default
 # Samsung
 BOARD_VENDOR := samsung
 
-# SePolicy
+# SE Policy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 
 # Vibrator
 $(call soong_config_set,samsungVibratorVars,duration_amplitude,true)

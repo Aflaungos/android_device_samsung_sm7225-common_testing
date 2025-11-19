@@ -1,0 +1,11 @@
+add_hwservice(hal_audio_default, hal_bluetooth_a2dp_hwservice)
+
+r_dir_file(hal_audio_default, imei_efs_file)
+r_dir_file(hal_audio_default, sec_efs_file)
+
+allow hal_audio_default efs_file:dir search;
+
+get_prop(hal_audio_default, vendor_radio_prop)
+
+# ro.multisim*
+dontaudit hal_audio_default { default_prop radio_prop }:file { getattr map open read };
